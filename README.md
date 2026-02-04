@@ -18,10 +18,11 @@
 This project develops a machine learning model to predict customer churn in e-commerce, enabling proactive retention strategies. Using transaction data from a UK-based online retailer, we engineer RFM (Recency, Frequency, Monetary) and behavioral features to identify customers at risk of churning.
 
 **Key Results:**
-- Built and evaluated 6 classification models on 4,000+ customers
-- Engineered 20+ predictive features from transaction data
-- Achieved strong predictive performance for identifying at-risk customers
-- Identified key churn indicators: Recency, Frequency, and Purchase Patterns
+- **Best Model**: LightGBM with **76.77% ROC-AUC** and **75.5% recall**
+- Built and evaluated 6 classification models on 3,370 customers
+- Engineered 24 predictive features from 397,884 transactions
+- **43% churn rate** identified in the dataset
+- Identified key churn indicators: Cancellation behavior, Frequency, and Purchase Diversity
 
 ---
 
@@ -232,42 +233,43 @@ probabilities = model.predict_proba(scaler.transform(customer_data[feature_cols]
 
 | Model | CV ROC-AUC | Test ROC-AUC | Test F1 |
 |-------|------------|--------------|---------|
-| Gradient Boosting | 0.9XXX | 0.9XXX | 0.8XXX |
-| XGBoost | 0.9XXX | 0.9XXX | 0.8XXX |
-| LightGBM | 0.9XXX | 0.9XXX | 0.8XXX |
-| Random Forest | 0.9XXX | 0.9XXX | 0.8XXX |
-| Logistic Regression | 0.8XXX | 0.8XXX | 0.7XXX |
-| Decision Tree | 0.8XXX | 0.8XXX | 0.7XXX |
-
-*Note: Actual values populated after notebook execution*
+| **LightGBM** | **0.83** | **0.77** | **0.68** |
+| Gradient Boosting | 0.83 | 0.76 | 0.68 |
+| XGBoost | 0.83 | 0.75 | 0.65 |
+| Random Forest | 0.80 | 0.74 | 0.65 |
+| Logistic Regression | 0.77 | 0.74 | 0.68 |
+| Decision Tree | 0.72 | 0.64 | 0.61 |
 
 ### Feature Importance
 
-Top predictive features for customer churn:
-1. **Recency** - Days since last purchase
-2. **Frequency** - Number of orders
-3. **Monetary** - Total spend
-4. **AvgDaysBetweenPurchases** - Purchase intervals
-5. **UniqueProducts** - Product diversity
+Top predictive features for customer churn (LightGBM):
+1. **TotalCancellations** (170) - Number of cancelled orders
+2. **CancellationRate** (165) - Proportion of cancelled orders
+3. **UniqueProducts** (152) - Product diversity purchased
+4. **Tenure** (101) - Customer relationship length
+5. **StdOrderValue** (100) - Variability in order values
+6. **AvgUnitPrice** (91) - Average price of items purchased
+7. **ItemsPerOrder** (82) - Shopping basket size
 
 ---
 
 ## Key Findings
 
-### 1. Recency is the Strongest Predictor
-Customers who haven't purchased recently are significantly more likely to churn. Setting up automated re-engagement triggers at 30, 60, and 90 days is recommended.
+### 1. Cancellation Behavior is the Strongest Predictor
+Contrary to traditional RFM focus, **order cancellations** emerged as the strongest predictor. Customers with higher cancellation rates are significantly more likely to churn, indicating dissatisfaction.
 
-### 2. Low-Frequency Customers Are High Risk
-One-time buyers have the highest churn probability. Implementing post-purchase follow-ups and loyalty programs can improve retention.
+### 2. Product Diversity Indicates Engagement
+Customers who purchase from a **narrow range of products** (low UniqueProducts) are more likely to churn. Those with broader product exploration show stronger engagement.
 
-### 3. Product Diversity Matters
-Customers who purchase from multiple categories are less likely to churn. Cross-selling and personalized recommendations can increase engagement.
+### 3. Low-Frequency Customers Are High Risk
+One-time buyers have the highest churn probability (retained customers average 4.8 orders vs 1.9 for churned). Implementing post-purchase follow-ups and loyalty programs is critical.
 
 ### 4. Early Warning Signs
-- Increasing purchase intervals
-- Declining order values
-- Reduced product variety
-- Order cancellations
+- Increasing order cancellations
+- Low product diversity (fewer unique products)
+- Long gaps between purchases (high Recency)
+- Single or very few orders (low Frequency)
+- Lower total spending
 
 ---
 
@@ -275,11 +277,11 @@ Customers who purchase from multiple categories are less likely to churn. Cross-
 
 ### Retention Strategies by Risk Level
 
-| Risk Level | Churn Probability | Recommended Action |
-|------------|-------------------|-------------------|
-| High Risk | >60% | Immediate outreach, special offers |
-| Medium Risk | 30-60% | Re-engagement emails, product recommendations |
-| Low Risk | <30% | Loyalty rewards, satisfaction surveys |
+| Risk Level | Churn Probability | Actual Churn Rate | Recommended Action |
+|------------|-------------------|-------------------|-------------------|
+| High Risk | >60% | **64%** (274 customers) | Immediate outreach, special offers |
+| Medium Risk | 30-60% | **50%** (167 customers) | Re-engagement emails, product recommendations |
+| Low Risk | <30% | **13%** (233 customers) | Loyalty rewards, satisfaction surveys |
 
 ### Implementation Roadmap
 
