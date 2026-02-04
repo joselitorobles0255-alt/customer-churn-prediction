@@ -1,0 +1,32 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Jupyter notebooks
+*.ipynb linguist-language=Python
+
+# Documentation
+*.md linguist-documentation=false
+
+# Python
+*.py text diff=python
+
+# Data files (binary)
+*.csv text
+*.json text
+*.parquet binary
+*.pkl binary
+*.joblib binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Explicitly declare text files
+*.txt text
+*.html text
+*.css text
+*.js text
