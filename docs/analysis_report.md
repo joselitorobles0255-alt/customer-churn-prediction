@@ -3,7 +3,7 @@
 ## Identifying At-Risk Customers Using Transaction Data
 
 **Author:** Jamiu Olamilekan Badmus  
-**Date:** February 2026
+
 
 ---
 
@@ -296,4 +296,4 @@ This analysis demonstrates that customer churn in e-commerce can be effectively 
 
 ---
 
-*This analysis was conducted as part of a data science portfolio project. For questions or collaboration opportunities, contact jamiubadmus001@gmail.com.*
+*For questions or collaboration opportunities, contact jamiubadmus001@gmail.com.*
